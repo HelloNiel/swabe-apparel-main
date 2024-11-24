@@ -27,7 +27,7 @@ function Dashboard() {
       <div className="dashboard-container">
         <div className={`dashboard-content ${isSidebarOpen ? "shifted" : ""}`}>
           <div className="summary-label mt-5 mb-3">
-            <h2 className="section-title">Inventory Summary</h2>
+            <h2 className="section-tittle">Inventory Summary</h2>
             <Button onClick={toggleInventoryVisibility} className="toggle-button" variant="link">
               <i className={`fas ${isInventoryVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
             </Button>

@@ -51,6 +51,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
+  letter-spacing: 2px;
   text-transform: uppercase;
   display: inline;
   margin-right: 10px;
@@ -85,6 +86,7 @@ body {
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
+  padding-top: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -101,7 +103,9 @@ body {
 }
 
 .dashboard-card h3, .dashboard-value, .dashboard-card .label {
-  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .dashboard-card .label {
@@ -117,8 +121,9 @@ body {
 
 .dashboard-value {
   font-size: 2rem;
-  font-weight: bold;
-  color: #5cb85c;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #ffff;
 }
 
 .toggle-button i {
