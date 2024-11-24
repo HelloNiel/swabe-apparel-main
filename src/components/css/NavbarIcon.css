@@ -1,0 +1,16 @@
+.icon-hover {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+  
+.icon {
+    margin-left: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.icon-hover:hover .icon {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}

@@ -1,0 +1,169 @@
+body {
+  background: #f4f7fa;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+}
+
+.dashboard-box .label i {
+  margin-right: 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.summary-label {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.summary-label h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  display: inline;
+  margin-right: 10px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: #435565;
+  cursor: pointer;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dashboard-boxes {
+  margin-top: 10px;
+}
+
+.dashboard-boxes.collapsed {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.dashboard-box {
+  flex: 1 1 calc(25% - 20px);
+  margin: 0;
+  background: #636d7d;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, width 0.3s ease, height 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dashboard-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-box h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.dashboard-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5cb85c;
+  margin-top: 15px;
+}
+
+.dashboard-box .label {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.dashboard-boxes .dashboard-box {
+  flex: 1 1 200px;
+  margin: 10px;
+  background: #636d7d;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-value {
+  font-size: 24px;
+  color: #fff;
+}
+
+.label-container .label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-boxes .dashboard-box .label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dashboard-boxes .dashboard-box .dashboard-value {
+  font-size: 24px;
+  color: #fff;
+}
+
+.dashboard-boxes .dashboard-box .label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.toggle-button i {
+  transition: transform 0.5s ease;
+}
+
+.toggle-button i.fa-chevron-up {
+  transform: rotate(180deg);
+}
+
+.toggle-button i.fa-chevron-down {
+  transform: rotate(0deg);
+}

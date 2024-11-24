@@ -1,0 +1,24 @@
+.nav-tabs .nav-link {
+  border-radius: 0 !important;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.modal-form-control {
+  margin-bottom: 15px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.edit-modal .modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}

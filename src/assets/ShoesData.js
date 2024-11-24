@@ -1,0 +1,58 @@
+const shoesData = [
+  {
+    id: 1,
+    name: "Reebok Classic Leather",
+    price: 120.0,
+    image: require("../assets/images/shoes/n1.jpg"),
+    rating: 5,
+    colors: ["Red", "Blue", "Green"],
+    sizes: ["34", "36", "37", "39", "41"],
+  },
+  {
+    id: 2,
+    name: "Adidas Superstar",
+    price: 90.0,
+    image: require("../assets/images/shoes/n2.jpg"),
+    rating: 5,
+    colors: ["White", "Black", "Navy"],
+    sizes: ["34", "35", "38", "40", "41"],
+  },
+  {
+    id: 3,
+    name: "New Balance 574",
+    price: 150.0,
+    image: require("../assets/images/shoes/n3.jpg"),
+    rating: 5,
+    colors: ["Pink", "Purple", "Yellow"],
+    sizes: ["35", "36", "37", "38", "39"],
+  },
+  {
+    id: 4,
+    name: "Puma Suede Classic",
+    price: 150.0,
+    image: require("../assets/images/shoes/n4.jpg"),
+    rating: 5,
+    colors: ["Black", "White", "Gray"],
+    sizes: ["34", "36", "38", "40", "41"],
+  },
+  {
+    id: 5,
+    name: "Nike Air Max",
+    price: 150.0,
+    image: require("../assets/images/shoes/n5.jpg"),
+    rating: 5,
+    colors: ["Teal", "Coral", "Beige"],
+    sizes: ["35", "37", "39", "40", "41"],
+  },
+  {
+    id: 6,
+    name: "Converse Chuck Taylor",
+    price: 150.0,
+    image: require("../assets/images/shoes/n6.jpg"),
+    rating: 5,
+    colors: ["Brown", "Tan", "Olive"],
+    sizes: ["34", "36", "37", "39"],
+  },
+];
+
+export default shoesData;

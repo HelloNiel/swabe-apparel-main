@@ -1,0 +1,27 @@
+.login-container {
+    color: white;
+    background: #e5eaf0;
+    border-radius: 0px;
+}
+  
+.welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+  
+.login-card {
+    background-color: white;
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+  
+.login-card .text-muted {
+    color: #6c757d;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+    padding: 15px;
+    width: 800px;
+}

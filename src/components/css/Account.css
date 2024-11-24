@@ -1,0 +1,44 @@
+.my-profile-container {
+  background-color: #e5eaf0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.my-profile-card {
+  background-color: #ffffff;
+  border-radius: 0px;
+  padding: 50px;
+  font-size: 16px;
+}
+
+.profile-item {
+  margin-bottom: 10px;
+}
+
+.custom-button {
+  border-radius: 0px;
+}
+
+.custom-input {
+  border-radius: 0;
+  border: 1px solid black;
+}
+
+.custom-input:focus {
+  box-shadow: none;
+  border-color: black;
+}
+
+.custom-button {
+  border-radius: 0;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-button:hover {
+  background-color: black;
+  color: white;
+}
