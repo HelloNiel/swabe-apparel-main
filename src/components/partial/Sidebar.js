@@ -76,7 +76,7 @@ function Sidebar({ isSidebarOpen, toggleSidebar }) {
                 to="/products-admin"
                 onClick={handleLinkClick}
               >
-                <FaBox className="sidebar-icon" /> Products
+                <FaBox className="sidebar-icon" /> Information
               </NavLink>
             </li>
           </ul>
