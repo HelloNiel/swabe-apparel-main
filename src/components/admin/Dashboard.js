@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../partial/Sidebar";
 import "../css/Dashboard.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Button, Card } from 'react-bootstrap';
 
 function Dashboard() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -26,167 +26,176 @@ function Dashboard() {
       <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <div className="dashboard-container">
         <div className={`dashboard-content ${isSidebarOpen ? "shifted" : ""}`}>
-          {/* Inventory Summary Section */}
-          <div className="summary-label mt-5">
-            <h2>Inventory Summary</h2>
-            <button onClick={toggleInventoryVisibility} className="toggle-button">
+          <div className="summary-label mt-5 mb-3">
+            <h2 className="section-title">Inventory Summary</h2>
+            <Button onClick={toggleInventoryVisibility} className="toggle-button" variant="link">
               <i className={`fas ${isInventoryVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-            </button>
+            </Button>
           </div>
           <div className={`dashboard-boxes ${!isInventoryVisible ? 'collapsed' : ''}`}>
-            <Row>
+            <Row className="mb-4 g-4">
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-cogs"></i> 
-                      Total Products
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-cogs"></i> Total Products
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Products Count</h3>
-                    <div className="dashboard-value">460</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Products Count</h3>
+                      <div className="dashboard-value">460</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-box"></i>
-                      Bought Products
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-box"></i> Bought Products
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Products Sold</h3>
-                    <div className="dashboard-value">180</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Products Sold</h3>
+                      <div className="dashboard-value">180</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-coins"></i> 
-                      Income
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-coins"></i> Income
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Total Income</h3>
-                    <div className="dashboard-value">₱12,500</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Total Income</h3>
+                      <div className="dashboard-value">₱12,500</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-th-large"></i>
-                      Categories
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-th-large"></i> Categories
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Categories Count</h3>
-                    <div className="dashboard-value">3</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Categories Count</h3>
+                      <div className="dashboard-value">3</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
-            <Row className="mb-3">
-              <Col md={6} className="mb-3">
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-clock"></i>
-                      Last Update
+            <Row className="mb-4 g-4">
+              <Col md={3}>
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-clock"></i> Last Update
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Last Updated</h3>
-                    <div className="dashboard-value">Nov 22, 2024 3:30 PM</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Last Updated</h3>
+                      <div className="dashboard-value">Nov 22, 2024 3:30 PM</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
-              <Col md={6} className="mb-3">
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-exclamation-triangle"></i>
-                      Low Stock
+              <Col md={3}>
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-exclamation-triangle"></i> Low Stock
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Low Stock Items</h3>
-                    <div className="dashboard-value">12</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Low Stock Items</h3>
+                      <div className="dashboard-value">12</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </div>
-          {/* System Information Section */}
-          <div className="summary-label mt-5">
-            <h2>System Information</h2>
-            <button onClick={toggleSystemInfoVisibility} className="toggle-button">
+
+          <div className="summary-label mt-5 mb-3">
+            <h2 className="section-title">System Information</h2>
+            <Button onClick={toggleSystemInfoVisibility} className="toggle-button" variant="link">
               <i className={`fas ${isSystemInfoVisible ? 'fa-chevron-up' : 'fa-chevron-down'}`} />
-            </button>
+            </Button>
           </div>
           <div className={`dashboard-boxes ${!isSystemInfoVisible ? 'collapsed' : ''}`}>
-            <Row>
+            <Row className="mb-4 g-4">
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-users"></i>
-                      Users
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-users"></i> Users
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>User Count</h3>
-                    <div className="dashboard-value">4</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">User Count</h3>
+                      <div className="dashboard-value">4</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-sign-in-alt"></i>
-                      Log In Users
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-sign-in-alt"></i> Log In Users
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Active Users</h3>
-                    <div className="dashboard-value">2</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Active Users</h3>
+                      <div className="dashboard-value">2</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-cart-plus"></i>
-                      Add to Cart Users
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-cart-plus"></i> Add to Cart Users
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Users with Cart</h3>
-                    <div className="dashboard-value">3</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Users with Cart</h3>
+                      <div className="dashboard-value">3</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
               <Col md={3}>
-                <div className="dashboard-box">
-                  <div className="label-container">
-                    <div className="label">
-                      <i className="fas fa-user-slash"></i>
-                      Non-Active Users
+                <Card className="dashboard-card">
+                  <Card.Body>
+                    <div className="label-container">
+                      <div className="label">
+                        <i className="fas fa-user-slash"></i> Non-Active Users
+                      </div>
                     </div>
-                  </div>
-                  <div className="value-container">
-                    <h3>Inactive Users</h3>
-                    <div className="dashboard-value">2</div>
-                  </div>
-                </div>
+                    <div className="value-container">
+                      <h3 className="value-title">Inactive Users</h3>
+                      <div className="dashboard-value">2</div>
+                    </div>
+                  </Card.Body>
+                </Card>
               </Col>
             </Row>
           </div>
