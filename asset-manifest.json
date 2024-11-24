@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/swabe-apparel-main/static/css/main.592f5931.css",
-    "main.js": "/swabe-apparel-main/static/js/main.d61ca558.js",
+    "main.js": "/swabe-apparel-main/static/js/main.26f4fb83.js",
     "static/media/Banner.jpg": "/swabe-apparel-main/static/media/Banner.8da29a3501c472a2e390.jpg",
     "static/media/s4.png": "/swabe-apparel-main/static/media/s4.ed1a384a41af31cf4031.png",
     "static/media/s1.png": "/swabe-apparel-main/static/media/s1.2009403044afe3181ca7.png",
@@ -64,10 +64,10 @@
     "static/media/fa-v4compatibility.woff2": "/swabe-apparel-main/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
     "index.html": "/swabe-apparel-main/index.html",
     "main.592f5931.css.map": "/swabe-apparel-main/static/css/main.592f5931.css.map",
-    "main.d61ca558.js.map": "/swabe-apparel-main/static/js/main.d61ca558.js.map"
+    "main.26f4fb83.js.map": "/swabe-apparel-main/static/js/main.26f4fb83.js.map"
   },
   "entrypoints": [
     "static/css/main.592f5931.css",
-    "static/js/main.d61ca558.js"
+    "static/js/main.26f4fb83.js"
   ]
 }
